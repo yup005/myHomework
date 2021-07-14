@@ -1,4 +1,4 @@
-package com.pan.String;
+package pers.pan.stringManipulation;
 
 import java.util.Scanner;
 
