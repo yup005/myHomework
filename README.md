@@ -1,4 +1,6 @@
+##This is JAVA homework by Pan.
 
+***
 ### [String Manipulation Exercises](src/main/java/pers/pan/stringManipulation) 7/13
 
 Create a new JAVA Strings Project in IDE:
@@ -28,7 +30,7 @@ Create a new JAVA Strings Project in IDE:
 ***
 
 
-### [Bank Transactions]() 7/14
+### [Bank Transactions](src/main/java/pers/pan/bankTransactions) 7/14
 1. Create a new class for a bank account
 2. Create fields for the following:
    account number = 123456789
