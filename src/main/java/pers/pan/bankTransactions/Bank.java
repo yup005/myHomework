@@ -40,27 +40,27 @@ public class Bank {
     }
 
     public String getAccountNumber() {
-        System.out.printf("Your account number is %s.\n", accountNumber);
+//        System.out.printf("Your account number is %s.\n", accountNumber);
         return accountNumber;
     }
 
     public double getBalance() {
-        System.out.printf("Your balance is %.1f.\n", balance);
+//        System.out.printf("Your balance is %.1f.\n", balance);
         return balance;
     }
 
     public String getCustomerName() {
-        System.out.printf("Your name is %s.\n", customerName);
+//        System.out.printf("Your name is %s.\n", customerName);
         return customerName;
     }
 
     public String getEmail() {
-        System.out.printf("Your E-mail address is %s.\n", email);
+//        System.out.printf("Your E-mail address is %s.\n", email);
         return email;
     }
 
     public String getPhoneNumber() {
-        System.out.printf("Your phone number is %s.\n", phoneNumber);
+//        System.out.printf("Your phone number is %s.\n", phoneNumber);
         return phoneNumber;
     }
 
