@@ -1,6 +1,4 @@
-
-###This is JAVA homework by Pan.
-
+**This is JAVA homework by Pan.**
 ***
 ### [String Manipulation Exercises](src/main/java/pers/pan/stringManipulation) 7/13
 
