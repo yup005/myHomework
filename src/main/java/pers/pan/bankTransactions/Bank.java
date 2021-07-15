@@ -7,21 +7,20 @@ public class Bank {
     private String email;
     private String phoneNumber;
 
-    public Bank() {
-    }
+    public Bank() { this.balance = 0; }
 
     public Bank(double balance) {
         this.balance = balance;
     }
 
-    public void deposit(double funds){
+    public void deposit(double funds) {
         balance += funds;
         System.out.printf("Successful deposit, the current balance of" +
                 " %s's account is %.1f.\n", customerName, balance);
     }
 
-    public void withdraw(double funds){
-        if (funds>balance){
+    public void withdraw(double funds) {
+        if (funds > balance) {
             System.out.printf("There are insufficient funds." +
                     " You balance is %.1f.\n", balance);
         } else {
@@ -31,7 +30,7 @@ public class Bank {
         }
     }
 
-    public void getInfo(){
+    public void getInfo() {
         System.out.printf("Name: %s\n", customerName);
         System.out.printf("Account number: %s\n", accountNumber);
         System.out.printf("Balance: %.1f\n", balance);
@@ -69,6 +68,11 @@ public class Bank {
         this.accountNumber = accountNumber;
     }
 
+    //use int to set
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = Integer.toString(accountNumber);
+    }
+
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
@@ -79,5 +83,10 @@ public class Bank {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    //use int to set
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = Integer.toString(phoneNumber);
     }
 }

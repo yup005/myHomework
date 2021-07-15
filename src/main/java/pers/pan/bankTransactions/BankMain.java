@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Scanner;
 
-public class BankWindow {
+public class BankMain {
     public static void main(String[] args) {
         Bank mine, test, newAccount;
         test = new Bank(50.0);
@@ -23,7 +23,7 @@ public class BankWindow {
         String string = scanner.nextLine();
 
         if (string.equals("Y")||string.equals("y")) {
-            newAccount = new Bank(0);
+            newAccount = new Bank();
 
             System.out.print("Please enter your name: ");
             string = scanner.nextLine();
