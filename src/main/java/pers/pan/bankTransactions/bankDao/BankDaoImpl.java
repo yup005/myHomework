@@ -1,13 +1,12 @@
 package pers.pan.bankTransactions.bankDao;
 
-import com.sun.net.httpserver.Authenticator;
 import pers.pan.bankTransactions.Bank;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BankDaoImpl implements BankDao {
-    List<Bank> users;
+    private List<Bank> users;
     private int theAccountNumber = 100000000;
 
     public BankDaoImpl() {
@@ -18,6 +17,16 @@ public class BankDaoImpl implements BankDao {
     public void addUser() {
         Bank user = new Bank();
         user.setAccountNumber(theAccountNumber);
+        System.out.printf("Successful creating account! " +
+                "Your account number is %d.\n", theAccountNumber);
+        theAccountNumber++;
+        users.add(user);
+    }
+
+    public void addUser(String username) {
+        Bank user = new Bank();
+        user.setAccountNumber(theAccountNumber);
+        user.setCustomerName(username);
         System.out.printf("Successful creating account! " +
                 "Your account number is %d.\n", theAccountNumber);
         theAccountNumber++;
