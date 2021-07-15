@@ -55,7 +55,12 @@ public class BankDaoImpl implements BankDao {
 
     @Override
     public void deleteUser(int accountNumber) {
+        //users.removeIf(user->user.getAccountNumber().equals(accountNumber)))
         int index = accountNumber - 100000000;
+        if (users.get(index) == null) {
+            System.out.println("There is a incorrect account number.");
+            return;
+        }
         String name = users.get(index).getCustomerName();
         users.set(index, null);
         System.out.printf("%s's account has been deleted!\n", name);
