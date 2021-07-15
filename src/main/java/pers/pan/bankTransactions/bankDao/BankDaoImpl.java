@@ -82,6 +82,7 @@ public class BankDaoImpl implements BankDao {
 
     @Override
     public void getBalance(int accountNumber) {
-        System.out.printf("Your balance is %.1f.\n", users.get(accountNumber - 100000000).getBalance());
+        System.out.printf("Your balance is %.1f.\n",
+                users.get(accountNumber - 100000000).getBalance());
     }
 }
