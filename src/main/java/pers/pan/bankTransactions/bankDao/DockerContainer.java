@@ -21,6 +21,7 @@ public class DockerContainer {
                     + "customerName VARCHAR(255), "
                     + "email VARCHAR(255), "
                     + "phoneNumber VARCHAR(255), "
+                    + "balance DOUBLE, "
                     + "PRIMARY KEY ( AccountID ))";
             stmt.executeUpdate(sql);
             System.out.println("Successful creating!");
