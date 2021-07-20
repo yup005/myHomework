@@ -20,3 +20,16 @@ Add the following methods in DAO class:
 DAO example:
 
 https://www.tutorialspoint.com/design_pattern/data_access_object_pattern.htm
+
+Create a maven projectAdd Dao class in your project to connect to mysql aws database
+Push the changes in GIT
+***
+**Convert Bank Assignment to DAO MySQL Database**
+
+Create a maven projectAdd Dao class in your project to connect to mysql aws database
+Push the changes in GIT
+
+Examples:
+https://www.tutorialspoint.com/jdbc/jdbc-select-database.htm
+
+https://www.sourcecodeexamples.net/2020/05/java-jdbc-crud-example.html?m=1
