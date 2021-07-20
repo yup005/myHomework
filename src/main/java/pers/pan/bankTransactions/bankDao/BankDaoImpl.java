@@ -23,7 +23,7 @@ public class BankDaoImpl implements BankDao {
         users.add(user);
     }
 
-    public void addUser(String username) {
+/*    public void addUser(String username) {
         Bank user = new Bank();
         user.setAccountNumber(theAccountNumber);
         user.setCustomerName(username);
@@ -31,7 +31,7 @@ public class BankDaoImpl implements BankDao {
                 "Your account number is %d.\n", theAccountNumber);
         theAccountNumber++;
         users.add(user);
-    }
+    }*/
 
     @Override
     public void updateUserName(int accountNumber, String name) {

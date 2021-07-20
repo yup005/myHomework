@@ -2,7 +2,6 @@ package pers.pan.bankTransactions.bankDao;
 
 public interface BankDao {
     void addUser();
-    void addUser(String name);
 
     void updateUserName(int accountNumber, String name);
     void updateUserEmail(int accountNumber, String email);

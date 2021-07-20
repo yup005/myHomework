@@ -17,7 +17,8 @@ public class DaoPatternDemo {
 
         //second user
         System.out.println("\nsecond user");
-        bankDao.addUser("test2");
+        bankDao.addUser();
+        bankDao.updateUserName(100000001,"second user");
         bankDao.updateUserEmail(100000001,"test2@test.com");
         bankDao.updateUserPhone(100000001,"2000000000");
         bankDao.depositMoney(100000001, 2000);
