@@ -18,7 +18,7 @@ public class DockerContainer {
             Statement stmt = con.createStatement();
             String sql = "CREATE TABLE TestJava "
                     + "(AccountID INTEGER not NULL, "
-                    + "customerName VARCHAR(255), "
+                    + "name VARCHAR(255), "
                     + "email VARCHAR(255), "
                     + "phoneNumber VARCHAR(255), "
                     + "balance DOUBLE, "
