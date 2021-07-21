@@ -1,11 +1,6 @@
 package pers.pan.bankTransactions.bankDao;
 
-import pers.pan.bankTransactions.Bank;
-
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class SQLDao implements BankDao {
     final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
@@ -38,7 +33,7 @@ public class SQLDao implements BankDao {
     protected Connection getConnection() {
         Connection connection = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName(JDBC_DRIVER);
             connection = DriverManager.getConnection(DB_URL, USER, PASS);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
